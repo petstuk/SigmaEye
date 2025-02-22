@@ -29,8 +29,8 @@ pip install pywin32 wmi pyyaml psutil
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ProcessGuardian
-cd ProcessGuardian
+git clone https://github.com/petstuk/SigmaEye
+cd SigmaEye
 ```
 
 2. Install required packages:
