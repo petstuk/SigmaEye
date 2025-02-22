@@ -38,7 +38,7 @@ cd ProcessGuardian
 pip install -r requirements.txt
 ```
 
-3. Clone Sigma rules (optional but recommended):
+3. Clone Sigma rules (An older version of these already exist in this repository - to update this, delete the existing `sigma` folder and clone using the below command):
 ```bash
 git clone https://github.com/SigmaHQ/sigma.git
 ```
