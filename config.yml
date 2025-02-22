@@ -1,0 +1,65 @@
+# ETW Monitor Configuration
+
+# Logging configuration
+log_file: etw_monitor.log
+log_level: INFO
+
+# Known Living-off-the-Land Binaries (LOLBins)
+lolbins:
+  - certutil.exe
+  - rundll32.exe
+  - regsvr32.exe
+  - mshta.exe
+  - bitsadmin.exe
+  - wmic.exe
+  - cmstp.exe
+  - msbuild.exe
+
+# Suspicious process creation patterns
+suspicious_patterns:
+  - parent: cmd.exe
+    child: powershell.exe
+    description: "PowerShell execution from command prompt"
+  
+  - parent: explorer.exe
+    child: cmd.exe
+    description: "Command prompt launched directly from explorer"
+  
+  - parent: winword.exe
+    child: cmd.exe
+    description: "Command prompt launched from Word"
+  
+  - parent: excel.exe
+    child: powershell.exe
+    description: "PowerShell launched from Excel"
+  
+  - parent: outlook.exe
+    child: cmd.exe
+    description: "Command prompt launched from Outlook"
+
+# Suspicious DLL load paths
+suspicious_paths:
+  - C:\Windows\Temp
+  - C:\Temp
+  - C:\Users\Public
+  - C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+
+# Process injection detection
+injection_detection:
+  # Memory regions to monitor
+  suspicious_regions:
+    - PAGE_EXECUTE_READWRITE
+    - PAGE_EXECUTE_WRITECOPY
+  
+  # Known injection techniques
+  techniques:
+    - CreateRemoteThread
+    - NtCreateThreadEx
+    - QueueUserAPC
+    - SetWindowsHookEx
+
+# Alert thresholds
+thresholds:
+  max_process_chain_depth: 5
+  suspicious_dll_count: 3
+  injection_attempt_count: 2

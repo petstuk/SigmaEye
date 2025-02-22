@@ -1,0 +1,4 @@
+pywin32>=228
+wmi>=1.5.1
+pyyaml>=5.4.1
+psutil>=5.8.0

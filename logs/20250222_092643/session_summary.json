@@ -1,0 +1,69 @@
+{
+  "session_start": "2025-02-22T09:26:43.717516",
+  "session_end": "2025-02-22T09:27:08.258018",
+  "duration_seconds": 24.540502,
+  "total_alerts": 83,
+  "total_processes_monitored": 286,
+  "sigma_rules_loaded": 971,
+  "alert_types": {
+    "Sigma Rule Match: Potential Data Stealing Via Chromium Headless Debugging": 25,
+    "Sigma Rule Match: Write Protect For Storage Disabled": 74,
+    "Sigma Rule Match: Invoke-Obfuscation CLIP+ Launcher": 1,
+    "Sigma Rule Match: Invoke-Obfuscation Via Use MSHTA": 17,
+    "Sigma Rule Match: MsiExec Web Install": 1,
+    "Sigma Rule Match: IE ZoneMap Setting Downgraded To MyComputer Zone For HTTP Protocols Via CLI": 1,
+    "Sigma Rule Match: Potential Persistence Attempt Via Run Keys Using Reg.EXE": 7,
+    "Sigma Rule Match: Potential File Download Via MS-AppInstaller Protocol Handler": 1,
+    "Sigma Rule Match: Visual Studio Code Tunnel Service Installation": 23,
+    "Sigma Rule Match: InfDefaultInstall.exe .inf Execution": 3,
+    "Sigma Rule Match: HackTool - F-Secure C3 Load by Rundll32": 1,
+    "Suspicious process name: cmd.exe": 3,
+    "Sigma Rule Match: REGISTER_APP.VBS Proxy Execution": 1,
+    "Sigma Rule Match: SyncAppvPublishingServer VBS Execute Arbitrary PowerShell Code": 1,
+    "Suspicious parent process: cmd.exe -> python3.13.exe": 1,
+    "Sigma Rule Match: PowerShell DownloadFile": 1,
+    "Suspicious process name: powershell.exe": 1
+  },
+  "most_common_alerts": [
+    [
+      "Sigma Rule Match: Write Protect For Storage Disabled",
+      74
+    ],
+    [
+      "Sigma Rule Match: Potential Data Stealing Via Chromium Headless Debugging",
+      25
+    ],
+    [
+      "Sigma Rule Match: Visual Studio Code Tunnel Service Installation",
+      23
+    ],
+    [
+      "Sigma Rule Match: Invoke-Obfuscation Via Use MSHTA",
+      17
+    ],
+    [
+      "Sigma Rule Match: Potential Persistence Attempt Via Run Keys Using Reg.EXE",
+      7
+    ],
+    [
+      "Sigma Rule Match: InfDefaultInstall.exe .inf Execution",
+      3
+    ],
+    [
+      "Suspicious process name: cmd.exe",
+      3
+    ],
+    [
+      "Sigma Rule Match: Invoke-Obfuscation CLIP+ Launcher",
+      1
+    ],
+    [
+      "Sigma Rule Match: MsiExec Web Install",
+      1
+    ],
+    [
+      "Sigma Rule Match: IE ZoneMap Setting Downgraded To MyComputer Zone For HTTP Protocols Via CLI",
+      1
+    ]
+  ]
+}
