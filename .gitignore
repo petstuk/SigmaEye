@@ -17,3 +17,5 @@ venv
 # IDE
 .vscode
 .idea
+
+suspicious_chains.json
